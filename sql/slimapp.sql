@@ -26,44 +26,49 @@ SET time_zone = "+00:00";
 -- Table structure for table `customers`
 --
 
-CREATE TABLE `customers` (
-  `id` int(11) NOT NULL,
-  `first_name` varchar(255) NOT NULL,
-  `last_name` varchar(255) NOT NULL,
-  `phone` varchar(255) NOT NULL,
-  `email` varchar(255) NOT NULL,
-  `address` varchar(255) NOT NULL,
-  `city` varchar(255) NOT NULL,
-  `state` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+CREATE TABLE `estudiante` (
+  `id_est` int(11) NOT NULL,
+  `nombre` varchar(255) NOT NULL,
+  `apellido` varchar(255) NOT NULL,
+  `correo` varchar(255) NOT NULL,
+  `telefono_est` varchar(255) NOT NULL,
+  ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `customers`
+-- Dumping data for table `estudiante`
 --
 
-INSERT INTO `customers` (`id`, `first_name`, `last_name`, `phone`, `email`, `address`, `city`, `state`) VALUES
-(2, 'Sam', 'Smith', '333-333-3333', 'ssmith@yahoo.com', '33 Birch Rd', 'Miami', 'FL'),
-(3, 'Brad', 'Traversy', '333-333-3333', 'brad@test.com', '333 South st', 'Portland', 'ME');
+INSERT INTO `estudiante` (`id_est`, `nombre`, `apellido`, `correo`, `telefono_est`) VALUES
+(101,'Maria Paula','Perez Martinez','mariap@mail.com',5648215);
+(102,'Maria Alejandra', 'Castañeda Martinez','castañeda25@mail.com', '3265984598');
+(103,'Juan Camilo', 'Morales Rocha','jcrocha@mail.com',3256982301);
+(104,'Laura Vanessa','Gutierrez Doncel','lauragd@mail.com','3156298427');
+(105,'Lina Marcela','Paez Lara','linamarp@mail.com','3215963285');
+(106,'Alan Brito','Parra Delgado','alanbrito@mail.com','3156248912');
+(107,'Kyle','Garcia','Kgarcia@mail.com',3165928465);
+(108,'Michael','Johnson','MichaelJ@mail.com',3826591);
+(109,'Denisse','Smith','denisses@mail.com',3014681695);
+(110,'Donald','Perez','Dperez@mail.com',329506515);
 
 --
 -- Indexes for dumped tables
 --
 
 --
--- Indexes for table `customers`
+-- Indexes for table `estudiante`
 --
-ALTER TABLE `customers`
-  ADD PRIMARY KEY (`id`);
+ALTER TABLE `estudiante`
+  ADD PRIMARY KEY (`id_est`);
 
 --
 -- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT for table `customers`
+-- AUTO_INCREMENT for table `estudiante`
 --
-ALTER TABLE `customers`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+ALTER TABLE `estudiante`
+  MODIFY `id_est` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
