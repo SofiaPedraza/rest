@@ -36,9 +36,9 @@ $app->add(function ($req, $res, $next) {
 
 // Get All Customers
 
-$app->get('/api/customers', function(Request $request, Response $response){
+$app->get('/api/estudiantes', function(Request $request, Response $response){
 
-    $sql = "SELECT * FROM customers";
+    $sql = "SELECT * FROM estudiantes";
 
 
 
@@ -60,7 +60,7 @@ $app->get('/api/customers', function(Request $request, Response $response){
 
         $db = null;
 
-        echo json_encode($customers);
+        echo json_encode($estudiantes);
 
     } catch(PDOException $e){
 
