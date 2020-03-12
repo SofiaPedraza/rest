@@ -60,7 +60,7 @@ $app->get('/api/estudiantes', function(Request $request, Response $response){
 
         $db = null;
 
-        echo json_encode($estudiantes);
+        echo json_encode($customers);
 
     } catch(PDOException $e){
 
