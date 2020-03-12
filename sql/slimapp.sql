@@ -26,7 +26,7 @@ SET time_zone = "+00:00";
 -- Table structure for table `customers`
 --
 
-CREATE TABLE `estudiante` (
+CREATE TABLE `estudiantes` (
   `id_est` int(11) NOT NULL,
   `nombre` varchar(255) NOT NULL,
   `apellido` varchar(255) NOT NULL,
@@ -35,10 +35,10 @@ CREATE TABLE `estudiante` (
   ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `estudiante`
+-- Dumping data for table `estudiantes`
 --
 
-INSERT INTO `estudiante` (`id_est`, `nombre`, `apellido`, `correo`, `telefono_est`) VALUES
+INSERT INTO `estudiantes` (`id_est`, `nombre`, `apellido`, `correo`, `telefono_est`) VALUES
 (101,'Maria Paula','Perez Martinez','mariap@mail.com',5648215);
 (102,'Maria Alejandra', 'Castañeda Martinez','castañeda25@mail.com', '3265984598');
 (103,'Juan Camilo', 'Morales Rocha','jcrocha@mail.com',3256982301);
@@ -55,9 +55,9 @@ INSERT INTO `estudiante` (`id_est`, `nombre`, `apellido`, `correo`, `telefono_es
 --
 
 --
--- Indexes for table `estudiante`
+-- Indexes for table `estudiantes`
 --
-ALTER TABLE `estudiante`
+ALTER TABLE `estudiantes`
   ADD PRIMARY KEY (`id_est`);
 
 --
@@ -65,9 +65,9 @@ ALTER TABLE `estudiante`
 --
 
 --
--- AUTO_INCREMENT for table `estudiante`
+-- AUTO_INCREMENT for table `estudiantes`
 --
-ALTER TABLE `estudiante`
+ALTER TABLE `estudiantes`
   MODIFY `id_est` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
