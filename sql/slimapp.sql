@@ -23,7 +23,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `customers`
+-- Table structure for table `estudiantes`
 --
 
 CREATE TABLE `estudiantes` (
@@ -31,7 +31,7 @@ CREATE TABLE `estudiantes` (
   `nombre` varchar(255) NOT NULL,
   `apellido` varchar(255) NOT NULL,
   `correo` varchar(255) NOT NULL,
-  `telefono_est` varchar(255) NOT NULL,
+  `telefono_est` bigint NOT NULL
   ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
