@@ -119,10 +119,10 @@ $app->put('/api/estudiante/update/{id}', function(Request $request, Response $re
 
         $stmt = $db->prepare($sql);
 
-        $stmt->bindParam(':nombre', $nombre);
-        $stmt->bindParam(':apellido',  $apellido);
-        $stmt->bindParam(':correo',      $correo);
-        $stmt->bindParam(':telefono_est',      $telefono_est);
+        $stmt->bindParam(':nombre',         $nombre);
+        $stmt->bindParam(':apellido',       $apellido);
+        $stmt->bindParam(':correo',         $correo);
+        $stmt->bindParam(':telefono_est',   $telefono_est);
         
      
 
