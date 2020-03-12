@@ -27,7 +27,7 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `estudiantes` (
-  `id_est` int(11) NOT NULL,
+  `id` int(11) NOT NULL,
   `nombre` varchar(255) NOT NULL,
   `apellido` varchar(255) NOT NULL,
   `correo` varchar(255) NOT NULL,
@@ -38,7 +38,7 @@ CREATE TABLE `estudiantes` (
 -- Dumping data for table `estudiantes`
 --
 
-INSERT INTO `estudiantes` (`id_est`, `nombre`, `apellido`, `correo`, `telefono_est`) VALUES
+INSERT INTO `estudiantes` (`id`, `nombre`, `apellido`, `correo`, `telefono_est`) VALUES
 (101,'Maria Paula','Perez Martinez','mariap@mail.com',5648215);
 (102,'Maria Alejandra', 'Castañeda Martinez','castañeda25@mail.com', '3265984598');
 (103,'Juan Camilo', 'Morales Rocha','jcrocha@mail.com',3256982301);
@@ -58,7 +58,7 @@ INSERT INTO `estudiantes` (`id_est`, `nombre`, `apellido`, `correo`, `telefono_e
 -- Indexes for table `estudiantes`
 --
 ALTER TABLE `estudiantes`
-  ADD PRIMARY KEY (`id_est`);
+  ADD PRIMARY KEY (`id`);
 
 --
 -- AUTO_INCREMENT for dumped tables
@@ -68,7 +68,7 @@ ALTER TABLE `estudiantes`
 -- AUTO_INCREMENT for table `estudiantes`
 --
 ALTER TABLE `estudiantes`
-  MODIFY `id_est` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
