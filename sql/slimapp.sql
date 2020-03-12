@@ -28,27 +28,27 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `estudiantes` (
   `id` int(11) NOT NULL,
-  `nombre` varchar(255) NOT NULL,
-  `apellido` varchar(255) NOT NULL,
-  `correo` varchar(255) NOT NULL,
-  `telefono_est` bigint NOT NULL
+  `nombre` varchar(30) NOT NULL,
+  `apellido` varchar(30) NOT NULL,
+  `correo` varchar(50) NOT NULL,
+  `telefono` int NOT NULL
   ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `estudiantes`
 --
 
-INSERT INTO `estudiantes` (`id`, `nombre`, `apellido`, `correo`, `telefono_est`) VALUES
-(101,'Maria Paula','Perez Martinez','mariap@mail.com',5648215);
-(102,'Maria Alejandra', 'Castañeda Martinez','castañeda25@mail.com', '3265984598');
-(103,'Juan Camilo', 'Morales Rocha','jcrocha@mail.com',3256982301);
-(104,'Laura Vanessa','Gutierrez Doncel','lauragd@mail.com','3156298427');
-(105,'Lina Marcela','Paez Lara','linamarp@mail.com','3215963285');
-(106,'Alan Brito','Parra Delgado','alanbrito@mail.com','3156248912');
-(107,'Kyle','Garcia','Kgarcia@mail.com',3165928465);
-(108,'Michael','Johnson','MichaelJ@mail.com',3826591);
-(109,'Denisse','Smith','denisses@mail.com',3014681695);
-(110,'Donald','Perez','Dperez@mail.com',329506515);
+INSERT INTO `estudiantes` (`id`, `nombre`, `apellido`, `correo`, `telefono`) VALUES
+(1,'Maria Paula','Perez Martinez','mariap@mail.com',5648215);
+(2,'Maria Alejandra', 'Castañeda Martinez','castañeda25@mail.com', 3265984);
+(3,'Juan Camilo', 'Morales Rocha','jcrocha@mail.com',3256982);
+(4,'Laura Vanessa','Gutierrez Doncel','lauragd@mail.com',3156298);
+(5,'Lina Marcela','Paez Lara','linamarp@mail.com',3215963);
+(6,'Alan Brito','Parra Delgado','alanbrito@mail.com',3156248);
+(7,'Kyle','Garcia','Kgarcia@mail.com',31659284);
+(8,'Michael','Johnson','MichaelJ@mail.com',3826591);
+(9,'Denisse','Smith','denisses@mail.com',3014681);
+(10,'Donald','Perez','Dperez@mail.com',329506);
 
 --
 -- Indexes for dumped tables
