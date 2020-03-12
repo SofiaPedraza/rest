@@ -36,10 +36,10 @@ $app->get('/api/estudiantes', function(Request $request, Response $response){
 });
 
 // Get Single Customer
-$app->get('/api/estudiante/{id_est}', function(Request $request, Response $response){
-    $id = $request->getAttribute('id_est');
+$app->get('/api/estudiante/{id}', function(Request $request, Response $response){
+    $id = $request->getAttribute('id');
 
-    $sql = "SELECT * FROM estudiantes WHERE id_est = $id_est";
+    $sql = "SELECT * FROM estudiantes WHERE id_est = $id";
 
     try{
         // Get DB Object
@@ -94,7 +94,7 @@ $app->post('/api/estudiante/add', function(Request $request, Response $response)
 
 // Update Customer
 $app->put('/api/estudiante/update/{id}', function(Request $request, Response $response){
-    $id_est = $request->getAttribute('id_est');
+    $id_est = $request->getAttribute('id');
     $nombre = $request->getParam('nombre');
     $apellido = $request->getParam('apellido');
     $correo = $request->getParam('correo');
@@ -109,7 +109,7 @@ $app->put('/api/estudiante/update/{id}', function(Request $request, Response $re
                 telefono_est	= :telefono_est,
                 
               
-			WHERE id_est = $id_est";
+			WHERE id_est = $id";
 
     try{
         // Get DB Object
@@ -136,10 +136,10 @@ $app->put('/api/estudiante/update/{id}', function(Request $request, Response $re
 });
 
 // Delete Customer
-$app->delete('/api/estudiante/delete/{id_est}', function(Request $request, Response $response){
-    $id = $request->getAttribute('id_est');
+$app->delete('/api/estudiante/delete/{id}', function(Request $request, Response $response){
+    $id = $request->getAttribute('id');
 
-    $sql = "DELETE FROM estudiantes WHERE id_est = $id_est";
+    $sql = "DELETE FROM estudiantes WHERE id_est = $id";
 
     try{
         // Get DB Object
